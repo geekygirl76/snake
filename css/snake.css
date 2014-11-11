@@ -1,0 +1,19 @@
+.cell{
+    display:inline-block;
+    width:20px;
+    height: 20px;
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+.snake{
+    background-color: green;
+}
+
+.apple{
+    background-color: red;
+}
+
+.head{
+    background-color: black;
+}

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Snake</title>
+        <link rel="stylesheet" href="../css/snake.css"></link>
+        <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+
+        <script type="text/javascript" src="../js/snake.js"></script>
+        <script type="text/javascript"
+                     src="../js/snake-view.js"></script>
+
+    </head>
+
+    <body>
+        <div id="grid"></div>
+        <script>
+        $(function(){
+
+            new SG.View($("div#grid"));
+        });
+        </script>
+    </body>
+</html>
