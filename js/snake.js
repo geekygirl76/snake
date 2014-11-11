@@ -108,19 +108,22 @@
     };
 
     Snake.prototype.dead = function(){
+        var segs = this.segments.slice(0,-1);
+        var dead = false;
         var snake = this;
         var row = this.head().i;
         var col = this.head().j;
         if(row<0 || row >= this.board.dim || col<0 || col >= this.board.dim){
-            return true;
+            dead= true;
         } else {
-            this.segments.forEach(function(seg){
-                if(seg == snake.head()){
-                    return true;
+            segs.forEach(function(seg){
+                if(seg.equal(snake.head())){
+                    dead= true;
                 }
             });
-            return false;
+
         }
+        return dead;
     };
 
     var Board = SG.Board = function(dim){
