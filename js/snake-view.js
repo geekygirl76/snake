@@ -27,13 +27,19 @@
 
             this.board.snake.turn("S");
 
-        } else {
-
+        } else if(event.which == 32){
+            this.restart();
         };
 
         this.board.snake.move();
         this.render();
 
+    };
+
+    View.prototype.restart= function(){
+        this.board = new SG.Board(20);
+
+        this.render();
     };
 
     View.prototype.render = function(){
