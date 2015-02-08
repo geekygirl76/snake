@@ -8,19 +8,23 @@
         <script type="text/javascript"
                      src="../js/snake-view.js"></script>
 
-    </head>
-
-    <body>
-        <h1>Snake</h1>
-        <div id="grid"></div>
         <script>
         $(function(){
 
             new SG.View($("div#grid"));
         });
         </script>
+
+    </head>
+
+    <body>
+
+        <div id="grid"></div>
+        <div id="right">
+        <h1>Snake</h1>
         <h3>Press arrows to move around and eat red apples.</h3>
         <h3>Don't run into yourself or the wall.</h3>
         <h3>Press space key to restart.</h3>
+        </div>
     </body>
 </html>

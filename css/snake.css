@@ -18,7 +18,27 @@
 .head {
     background-color: black;
 }
-
+#grid{
+    margin: 50px;
+    display:inline-block;
+    width: 50%;
+    float:left;
+}
+div#right{
+    float:left;
+    margin-top:150px;
+    padding:30px;
+    border: 1px solid grey;
+    background-color:#01DFD7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+body{
+    background: -webkit-linear-gradient(white, #3B0B17);
+     background: -o-linear-gradient(white, #3B0B17);
+     background: -moz-linear-gradient(white, #3B0B17);
+     background: linear-gradient(white, #3B0B17);
+}
 /*.row {
   clear: both;
 }*/
